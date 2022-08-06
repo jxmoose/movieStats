@@ -1,0 +1,18 @@
+{% extends "stats/layout.html" %}
+
+{% block title %}
+    Movie Stats!
+{% endblock %}
+
+{% block body %}
+    <div id="about">
+        <div id="text">
+            Hi! Welcome to MovieStats, a website that analyzes your movie data (from Letterboxd, IMDB, or a CSV file) and 
+            gives you some random stats about your movie watchings. Hope you enjoy!
+            <br>
+            <a class="link" href="{% url 'import_csv' %}"> Import from CSV &nbsp;</a>
+            <a class="link" href="{% url 'letterboxd' %}"> Import from Letterboxd &nbsp;</a>
+            <a class="link" href=""> Import from IMDB </a>
+        </div>
+    </div>
+{% endblock %}

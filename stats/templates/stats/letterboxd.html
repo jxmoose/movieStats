@@ -1,0 +1,17 @@
+{% extends "stats/layout.html" %}
+
+{% block title %}
+    Letterboxd Upload
+{% endblock %}
+
+{% block body %}
+<div id="about">
+    <div id="text">
+        Unfortunately Letterboxd data can not be accessed through outside websites currently. To get the CSV table: <br>
+        1. Login to letterboxd.com <br> 
+        2. Go to Profile > Settings <br>
+        3. Click "Import & Export Data" then "Export your Data" <br>
+        4. There should be a file called "ratings.csv" in the downloaded folder. Upload it through <a href="{% url 'import_csv' %}"> here </a>
+    </div>
+</div>
+{% endblock %}

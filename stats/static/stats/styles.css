@@ -1,0 +1,86 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .header {
+    margin: 0px;
+  }
+
+.topnav {
+    background-color: #1a2e46;
+    overflow: hidden; 
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #abb4cb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color:#91929f;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .link {
+    color: #7d8495;
+    text-decoration: none;
+  }
+
+  .link:hover {
+    color:#cacbdf;
+  }
+
+  #about{
+    color:white;
+    font-size: 40px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 80px;
+    overflow-y:auto
+  }
+
+  body{
+    background-color: #1b4d8b
+  }
+
+  #notice{
+    color:red;
+    font-size: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 80px;
+  }
+
+  .alert{
+    display:inline-block;
+    margin: 20px;
+  }
+
+  #imdb{
+    color:white;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    overflow-y:auto
+  }
+

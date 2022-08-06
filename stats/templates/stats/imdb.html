@@ -1,0 +1,24 @@
+{% extends "stats/layout.html" %}
+
+{% block title %}
+    IMDB Upload
+{% endblock %}
+
+{% block body %}
+<div id="imdb">
+    There are two ways to import IMDB list data. <br>
+    If your list is Public: <br>
+    1. Login to imdb.com <br> 
+    2. Go to Profile > Your lists <br>
+    3. Click on whicever list you'd like to import and copy and paste the link below <br>
+    <form action="{% url 'imdb' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" name="imdb_link" placeholder="IMDB Link">
+        <input type="submit" style="display: none" />
+    </form>
+    If your list is Private: <br>
+    1. Follow steps 1 and 2 above to get to your list <br>
+    2. Click the three vertical dots and click Export <br>
+    4. There should be a file called "your_list_name.csv" in the downloaded folder. Upload it through <a href="{% url 'import_csv' %}"> here </a>
+</div>
+{% endblock %}
